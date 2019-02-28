@@ -1,0 +1,17 @@
+{
+  "roots": [
+    "<rootDir>/"
+  ],
+  "transform": {
+    "^.+\\.tsx?$": "ts-jest"
+  },
+  "collectCoverage": true,
+  "testRegex": "(/tests/.*|(\\.|/)(test|spec))\\.ts$",
+  "moduleFileExtensions": [
+    "ts",
+    "js",
+    "jsx",
+    "json",
+    "node"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "de-bounce",
+  "version": "0.0.0",
+  "description": "Lodash/Underscore compatible Debounce function",
+  "author": "Christopher Bejnar <bejnar@compass.com>",
+  "contributors": [],
+  "license": "MIT",
+  "repository": "https://github.com/UrbanCompass/uc-frontend.git",
+  "main": "dist/debounce.js",
+  "scripts": {
+    "prepublishOnly": "tsc",
+    "dev": "tsc -w",
+    "lint": "tslint {src,__test__}/**/* -c tslint.json",
+    "test": "npm run lint && jest --config jest.config.json --no-cache"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.9",
+    "jest": "^24.1.0",
+    "ts-jest": "^24.0.0",
+    "tslint": "^5.13.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "typescript": "^3.3.3333"
+  }
+}
