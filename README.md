@@ -1,19 +1,21 @@
-# de-bounce
+# un-debounce
 
-This is an alternative implementation to the 'debounce' npm package, written in TypeScript.
+This is an alternative implementation to the 'debounce' npm package.
 
-It supports all of the functionality of the Underscore debounce functioin, plus a flush method which can be found in the Lodash implementation.
+## Why another debounce?
 
-## Installation
+The popular 'debounce' package uses an older implementation of Underscore's debounce.  The older version can leave misleading artifacts in JavaScript profiler, making it difficult to tell which debounced invocations were executed and which were not.
 
-`npm install de-bounce`
+This version is written in TypeScript and distributed as an ES6 module, which makes it suitable for newer projects.  All relevant unit tests from Underscore were ported over to ensure that it can be used as a drop-in replacement.
+
+Also included is a `flush` method similar to the one found in Lodash.
 
 ## Arguments
 func (Function): The function to debounce.
 
-[wait=0] (number): The number of milliseconds to delay.
+wait=0 (number): The number of milliseconds to delay.
 
-[immediate=false] (Object): The options object.
+immediate=false (Object): The options object.
 
 ## Returns
 
@@ -27,6 +29,9 @@ jQuery(window).on('resize', debounce(calculateLayout, 150));
 // Invoke `sendMail` when clicked, debouncing subsequent calls.
 jQuery(element).on('click', debounce(sendMail, 300, true));
 
-
 // Cancel the trailing debounced invocation.
-jQuery(window).on('popstate', debounced.cancel);```
+jQuery(window).on('popstate', debounced.cancel);
+
+// Invoke any pending invocations immediately
+debounced.flush();
+```
