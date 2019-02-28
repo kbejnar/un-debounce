@@ -6,7 +6,7 @@
   "contributors": [],
   "license": "MIT",
   "repository": "https://github.com/UrbanCompass/uc-frontend.git",
-  "main": "dist/debounce.js",
+  "main": "dist/index.js",
   "scripts": {
     "prepublishOnly": "tsc",
     "dev": "tsc -w",
