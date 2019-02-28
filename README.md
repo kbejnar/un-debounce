@@ -9,23 +9,23 @@ It supports all of the functionality of the Underscore debounce functioin, plus 
 `npm install de-bounce`
 
 ## Arguments
-<span style=" color: #3492ff;">func (Function)</span>: The function to debounce.
+func (Function): The function to debounce.
 
-<span style=" color: #3492ff;">[wait=0] (number)</span>: The number of milliseconds to delay.
+[wait=0] (number): The number of milliseconds to delay.
 
-<span style=" color: #3492ff;">[immediate=false] (Object)</span>: The options object.
+[immediate=false] (Object): The options object.
 
 ## Returns
 
-<span style=" color: #3492ff;">(Function):</span> Returns the new debounced function.
+(Function): Returns the new debounced function.
 
 ## Example
 ```javascript
 // Avoid costly calculations while the window size is in flux.
-jQuery(window).on('resize', _.debounce(calculateLayout, 150));
+jQuery(window).on('resize', debounce(calculateLayout, 150));
 
 // Invoke `sendMail` when clicked, debouncing subsequent calls.
-jQuery(element).on('click', _.debounce(sendMail, 300, true));
+jQuery(element).on('click', debounce(sendMail, 300, true));
 
 
 // Cancel the trailing debounced invocation.
