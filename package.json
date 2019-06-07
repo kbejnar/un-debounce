@@ -4,6 +4,11 @@
   "description": "Lodash/Underscore compatible Debounce function",
   "author": "Christopher Bejnar <bejnar@compass.com>",
   "contributors": [],
+  "keywords": [
+    "debounce",
+    "underscore",
+    "typescript"
+  ],
   "license": "MIT",
   "repository": "https://github.com/UrbanCompass/uc-frontend.git",
   "main": "dist/index.js",
@@ -14,11 +19,11 @@
     "test": "npm run lint && jest --config jest.config.json --no-cache"
   },
   "devDependencies": {
-    "@types/jest": "^24.0.9",
-    "jest": "^24.1.0",
-    "ts-jest": "^24.0.0",
-    "tslint": "^5.13.0",
+    "@types/jest": "^24.0.13",
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.17.0",
     "tslint-eslint-rules": "^5.4.0",
-    "typescript": "^3.3.3333"
+    "typescript": "^3.5.1"
   }
 }
