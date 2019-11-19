@@ -10,6 +10,14 @@ This version is written in TypeScript and distributed as an ES6 module, which ma
 
 Also included is a `flush` method similar to the one found in Lodash.
 
+## Install
+
+You can install this package from NPM:
+`npm install un-debounce`
+
+Then use it as an ES6 module:
+`import debounce from 'un-debounce';`
+
 ## Arguments
 func (Function): The function to debounce.
 
