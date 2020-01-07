@@ -1,6 +1,6 @@
 {
   "name": "un-debounce",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Lodash/Underscore compatible Debounce function",
   "author": "Christopher Bejnar <bejnar@compass.com>",
   "contributors": [],
@@ -12,9 +12,10 @@
   ],
   "license": "MIT",
   "repository": "https://github.com/kbejnar/un-debounce.git",
-  "main": "dist/index.js",
+  "main": "dist/cjs/index.js",
+  "browser": "dist/es6/index.js",
   "scripts": {
-    "prepublishOnly": "tsc",
+    "prepublishOnly": "tsc && tsc -p ./tsconfig.cjs.json",
     "dev": "tsc -w",
     "lint": "tslint {src,__test__}/**/* -c tslint.json",
     "test": "npm run lint && jest --config jest.config.json --no-cache"
