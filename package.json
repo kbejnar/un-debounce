@@ -4,7 +4,7 @@
   "description": "Lodash/Underscore compatible Debounce function",
   "author": "Christopher Bejnar <bejnar@compass.com>",
   "contributors": [],
-  "homepage": "https://github.com/kbejnar/un-debounce"
+  "homepage": "https://github.com/kbejnar/un-debounce",
   "keywords": [
     "debounce",
     "underscore",
