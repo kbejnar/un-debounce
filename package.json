@@ -4,13 +4,14 @@
   "description": "Lodash/Underscore compatible Debounce function",
   "author": "Christopher Bejnar <bejnar@compass.com>",
   "contributors": [],
+  "homepage": "https://github.com/kbejnar/un-debounce"
   "keywords": [
     "debounce",
     "underscore",
     "typescript"
   ],
   "license": "MIT",
-  "repository": "https://github.com/UrbanCompass/uc-frontend.git",
+  "repository": "https://github.com/kbejnar/un-debounce.git",
   "main": "dist/index.js",
   "scripts": {
     "prepublishOnly": "tsc",
